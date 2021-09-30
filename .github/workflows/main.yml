@@ -30,7 +30,7 @@ jobs:
       - name: Login a docker
         uses: docker/login-action@v1
         with:
-          username: ${{secrets.DOCKER_USER_USERNAME}}
+          username: ${{secrets.DOCKER_HUB_USERUSERNAME}}
           password: ${{secrets.DOCKER_HUB_ACESS_TOKEN}}
           
       #Setup del Buildx
@@ -45,6 +45,6 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USER_NAME}}//psweb:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME}}//psweb:latest
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
