@@ -40,7 +40,7 @@ jobs:
       
       - name: Construir y empujar (build and push)
         id: docker_build
-        uses: docker/setup-buildx-action@v2
+        uses: docker/setup-buildx-action@v1
         with:
           context: ./
           file: ./Dockerfile
