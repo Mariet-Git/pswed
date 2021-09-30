@@ -1,5 +1,5 @@
 # Simple web app for Pluralsight courses and Docker Deep Dive book
-
+[![CI to Docker Hub](https://github.com/Mariet-Git/pswed/actions/workflows/main.yml/badge.svg)](https://github.com/Mariet-Git/pswed/actions/workflows/main.yml)
 Exposes web server on port `8080` as per `./app.js`
 
 See `Dockerfile` for more details
