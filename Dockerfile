@@ -3,6 +3,7 @@
 FROM alpine
 
 LABEL maintainer="nigelpoulton@hotmail.com"
+LABEL org.opencontainers.image.source https://github.com/Mariet-Git/pswed
 
 # Install Node and NPM
 RUN apk add --update nodejs npm curl
